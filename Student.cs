@@ -25,5 +25,10 @@ namespace Practice_Aggregation_Containment
         public string LastName { get => _lastName; set => _lastName = value; }
         public int CsiGrade { get => _csiGrade; set => _csiGrade = value; }
         public int GenEdGrade { get => _genEdGrade; set => _genEdGrade = value; }
+
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName} - CSI Grade {CsiGrade} - GenEd Grade {GenEdGrade}";
+        }
     } // class Student
 } // namespace
