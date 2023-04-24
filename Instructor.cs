@@ -8,5 +8,21 @@ namespace Practice_Aggregation_Containment
 {
     internal class Instructor
     {
+        string _firstName;
+        string _lastName;
+
+        public Instructor(string firstName, string lastName)
+        {
+            _firstName = firstName;
+            _lastName = lastName;
+        }
+
+        public string FirstName { get => _firstName; set => _firstName = value; }
+        public string LastName { get => _lastName; set => _lastName = value; }
+
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName}";
+        }
     } // class
 } // namespace
